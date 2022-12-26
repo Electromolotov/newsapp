@@ -33,7 +33,7 @@ class ArticleScreen extends StatelessWidget {
                         children: [
                           ListTile(
                             onTap: () {
-                              Get.offAll(() => WebViewScreen(
+                              Get.to(() => WebViewScreen(
                                     uri: _articleController.responseSources
                                         .value.articles![index].url,
                                   ));
